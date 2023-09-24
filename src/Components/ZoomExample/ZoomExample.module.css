@@ -1,0 +1,17 @@
+.zoomexample{
+    width:100%;
+    height:calc(100% - 2 * var(--paddingVertical));
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:var(--paddingVertical) 0;
+    background-color:black;
+    --paddingVertical:0em;
+}
+.image{
+    width:100%;
+    /* margin-bottom:25em; */
+}
+.message{
+    font-size:5em;
+}

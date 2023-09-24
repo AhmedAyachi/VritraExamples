@@ -1,0 +1,16 @@
+.board{
+    width:fit-content;
+    
+    font-size:5em;
+}
+.status{
+    text-align:center;
+    margin-bottom:2em;
+}
+.gameboard{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr);
+    border:var(--border);
+    --border:1px solid black;
+}

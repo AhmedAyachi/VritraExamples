@@ -1,0 +1,31 @@
+.mainview{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    background-color:var(--backgroundColor);
+}
+.mainview>button{
+    font-size:5em;
+    padding:1em;
+    margin:1em 0;
+    border-radius:0.5em;
+}
+.icon{
+    width:20em;
+    height:20em;
+}
+.iframe{
+    width:20em;
+    height:20em;
+    overflow:clip;
+    border-width:0;
+}
+.header{
+    text-transform:none !important;
+    color:var(--textColor);
+    background-color:var(--mainColor);
+}
+.header img{
+    filter:invert(1);
+}

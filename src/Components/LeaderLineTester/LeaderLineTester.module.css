@@ -1,0 +1,50 @@
+.leaderlinetester{
+    width:80%;
+    height:100em;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    border-radius:2em;
+    background-color:rgba(0,0,0,0.1);
+    box-shadow:0 0 8px rgba(0,0,0,0.15);
+    overflow:scroll;
+}
+.leaderlinetester::-webkit-scrollbar{
+    width:1em;
+    height:1em;
+}
+.leaderlinetester::-webkit-scrollbar-thumb{
+    background-color:var(--minorColor);
+}
+.leaderlinetester::-webkit-scrollbar-track{
+    background-color:transparent;
+}
+.leaderlinetester>button{
+    font-size:5em;
+    color:var(--backgroundColor);
+    padding:0.5em 1em;
+    border-radius:0.25em;
+}
+.draggableview{
+    font-size:3em;
+    text-transform:capitalize;
+    color:var(--textColor); 
+    width:5em;
+    height:5em;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:0.2em;
+    background-color:var(--mainColor);
+}
+
+
+@media(any-hover){
+    .draggableview{
+        cursor:grab;
+    }
+    .leaderlinetester>button{
+        cursor:pointer;
+    }
+}
