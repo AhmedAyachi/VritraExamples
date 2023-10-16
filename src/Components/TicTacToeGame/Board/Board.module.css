@@ -1,9 +1,9 @@
 .board{
     width:fit-content;
-    
-    font-size:5em;
+    font-size:4em;
 }
 .status{
+    font-size:1.5em;
     text-align:center;
     margin-bottom:2em;
 }
@@ -12,5 +12,6 @@
     grid-template-columns:repeat(3,1fr);
     grid-template-rows:repeat(3,1fr);
     border:var(--border);
-    --border:1px solid black;
+    background-color:rgba(0,0,0,0.1);
+    --border:1px solid var(--mainColor);
 }

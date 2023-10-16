@@ -1,4 +1,4 @@
-.leaderlinetester{
+.leaderlineview{
     width:80%;
     height:100em;
     display:flex;
@@ -10,17 +10,17 @@
     box-shadow:0 0 8px rgba(0,0,0,0.15);
     overflow:scroll;
 }
-.leaderlinetester::-webkit-scrollbar{
+.leaderlineview::-webkit-scrollbar{
     width:1em;
     height:1em;
 }
-.leaderlinetester::-webkit-scrollbar-thumb{
+.leaderlineview::-webkit-scrollbar-thumb{
     background-color:var(--minorColor);
 }
-.leaderlinetester::-webkit-scrollbar-track{
+.leaderlineview::-webkit-scrollbar-track{
     background-color:transparent;
 }
-.leaderlinetester>button{
+.leaderlineview>button{
     font-size:5em;
     color:var(--backgroundColor);
     padding:0.5em 1em;
@@ -44,7 +44,7 @@
     .draggableview{
         cursor:grab;
     }
-    .leaderlinetester>button{
+    .leaderlineview>button{
         cursor:pointer;
     }
 }

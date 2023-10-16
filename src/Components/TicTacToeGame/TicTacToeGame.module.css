@@ -1,19 +1,39 @@
 .tictactoegame{
     width:fit-content;
+    height:85%;
     display:flex;
     justify-content:space-between;
     align-items:flex-start;
+    column-gap:15em;
 }
 .gameinfo{
-    margin-left:15em;
+    max-width:100%;
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    align-content:flex-start;
+    flex-wrap:wrap;
+    column-gap:2em;
+    row-gap:2em;
+    overflow:auto;
 }
 .gameinfo>li{
     font-size:4em;
     margin-bottom:0.25em;
 }
 .gameinfo button{
-    
     padding:0.25em 0.5em;
     border-radius:0.25em;
     border:0.1em solid black;
+}
+
+@media(max-width:15cm){
+    .tictactoegame{
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:stretch;
+        row-gap:5em;
+    }
 }

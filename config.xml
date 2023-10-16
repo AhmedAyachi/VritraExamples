@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0"
-    id="com.corellaexamples.app" android-packageName="com.corellaexamples.app" version="1.0.0" 
+    id="com.vritraexamples.app" android-packageName="com.vritraexamples.app" version="1.0.0" 
 >
-    <name>CorellaExamples</name>
+    <name>VritraExamples</name>
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"/>
     <description>App description</description>
     <author email="">Author/Organization name</author>

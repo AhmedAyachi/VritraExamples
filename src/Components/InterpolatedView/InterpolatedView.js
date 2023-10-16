@@ -1,4 +1,4 @@
-import {useId,View,map,interpolate} from "corella";
+import {useId,View,map,interpolate} from "vritra";
 import css from "./InterpolatedView.module.css";
 
 

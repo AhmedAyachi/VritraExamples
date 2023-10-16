@@ -1,4 +1,4 @@
-import {useId,View} from "corella";
+import {useId,View} from "vritra";
 import css from "./ComponentScreen.module.css";
 
 

@@ -1,12 +1,13 @@
-import {View} from "corella";
+import {Fragment} from "vritra";
+import css from "./NavButton.module.css";
 
 
 export default function NavButton(props){
     const {parent,move}=props;
-    const navbutton=View({parent,tag:"li"});
+    const navbutton=Fragment({parent});
 
     navbutton.innateHTML=`
-        <button ref="btn">${move>0?("Go to move #"+move):"Go to game start"}</button>
+        <button class="${css.button}"ref="btn">${move>0?("Go to move #"+move):"Go to game start"}</button>
     `;
 
     navbutton.btn.onclick=()=>{

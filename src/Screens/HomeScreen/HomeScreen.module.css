@@ -5,16 +5,20 @@
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    font-size:5em;
     background-color:var(--backgroundColor);
     overflow:hidden;
 }
-.homescreen button{
+.message{
+    max-width:80%;
     font-family:var(--mainFont);
-    font-weight:500;
-    text-transform:capitalize;
-    color:black;
-    padding:0.5em 1em;
-    margin:0.5em;
-    border-radius:0.5em;
+    font-size:5em;
+    line-height:1.5em;
+    text-align:center;
+}
+.message::first-letter{
+    text-transform:uppercase;
+}
+.message>img{
+    width:1.5em;
+    vertical-align:middle;
 }

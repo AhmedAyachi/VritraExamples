@@ -1,4 +1,4 @@
-import {useId,View} from "corella";
+import {View} from "vritra";
 import css from "./Square.module.css";
 
 

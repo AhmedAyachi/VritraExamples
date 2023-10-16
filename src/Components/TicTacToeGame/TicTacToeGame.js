@@ -1,4 +1,4 @@
-import {View,map} from "corella";
+import {View} from "vritra";
 import css from "./TicTacToeGame.module.css";
 import Board from "./Board/Board";
 import NavButton from "./NavButton/NavButton";
@@ -11,7 +11,7 @@ export default function TicTacToeGame(props){
     },{histroy}=state;
 
     tictactoegame.innateHTML=`
-        <ol ref="gameinfo" class="${css.gameinfo}"></ol>
+        <div ref="gameinfo" class="${css.gameinfo}"></div>
     `;
     Board({
         parent:tictactoegame,
@@ -29,7 +29,6 @@ export default function TicTacToeGame(props){
         NavButton({parent:tictactoegame.gameinfo,move});
     });
     
-
     tictactoegame.jumpTo=(move)=>{
         const lastMove=histroy.length-1;
         if((-1<move)&&(move<lastMove)){

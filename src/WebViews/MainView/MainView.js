@@ -1,7 +1,7 @@
-import {NativeView,DrawerNavigator} from "corella";
+import {NativeView,DrawerNavigator} from "vritra";
 import css from "./MainView.module.css";
 import * as components from "components";
-import {HashRouterScreen,ComponentScreen,PinchScreen,HomeScreen} from "screens";
+import {ComponentScreen,HomeScreen} from "screens";
 
 
 export default function MainView(props){

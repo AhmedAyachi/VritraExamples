@@ -1,21 +1,21 @@
-import {DraggableView, isTouchDevice} from "corella";
-import css from "./LeaderLineTester.module.css";
+import {DraggableView,isTouchDevice} from "vritra";
+import css from "./LeaderLineView.module.css";
 import LeaderLine from "leaderline";
 
 
-export default function LeaderLineTester(props){
-    const leaderlinetester=DraggableView({...props,className:css.leaderlinetester}),state={
+export default function LeaderLineView(props){
+    const leaderlineview=DraggableView({...props,className:css.leaderlineview}),state={
         start:null,end:null,
         hidden:false,
     };
 
-    leaderlinetester.innateHTML=`
+    leaderlineview.innateHTML=`
         <button ref="togglebtn">Toggle Line</button>
     `;
 
     ["start","end"].forEach(key=>{
         const draggableview=state[key]=DraggableView({
-            parent:leaderlinetester,
+            parent:leaderlineview,
             className:css.draggableview,
             onMove:()=>{line.position()},
         });
@@ -25,15 +25,15 @@ export default function LeaderLineTester(props){
         }
     });
     const line=new LeaderLine({
-        ...state,parent:leaderlinetester,
+        ...state,parent:leaderlineview,
         color:minorColor,
-        size:isTouchDevice()?rem/5:rem,
+        size:Math.min(isTouchDevice()?rem/5:rem,5),
     });
     
-    leaderlinetester.togglebtn.onclick=()=>{
+    leaderlineview.togglebtn.onclick=()=>{
         const hidden=state.hidden=!state.hidden;
         hidden?line.hide("fade"):line.show("fade",{});
     }
 
-    return leaderlinetester;
+    return leaderlineview;
 }

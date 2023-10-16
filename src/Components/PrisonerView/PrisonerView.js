@@ -1,4 +1,4 @@
-import {useId,View,DraggableView} from "corella";
+import {useId,View,DraggableView} from "vritra";
 import css from "./PrisonerView.module.css";
 
 

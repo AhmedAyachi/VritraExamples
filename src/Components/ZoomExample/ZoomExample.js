@@ -1,6 +1,5 @@
-import {useId,View,useZoomGesture,isTouchDevice} from "corella";
+import {useId,View,useZoomGesture,isTouchDevice} from "vritra";
 import css from "./ZoomExample.module.css";
-import {img7} from "assets";
 
 
 export default function ZoomExample(props){

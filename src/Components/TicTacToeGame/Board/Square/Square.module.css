@@ -1,5 +1,8 @@
 .square{
-    width:5em;
-    height:5em;
+    width:2em;
+    height:2em;
+    font-size:2.5em !important;
+    color:var(--textColor);
+    background-color:transparent;
     border:var(--border) !important;
 }
