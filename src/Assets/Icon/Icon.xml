@@ -1,20 +1,17 @@
 <vector
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:name="vector"
-    android:width="375dp"
-    android:height="812dp"
-    android:viewportWidth="375"
-    android:viewportHeight="812"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512"
 >
-    <path
-        android:name="background"
-        android:pathData="M 0 0 L 375 0 L 375 812 L 0 812 L 0 0"
-        android:fillColor="@color/mainColor"
-    />
     <group
         android:name="group"
-        android:translateX="172.5"
-        android:translateY="391"
+        android:translateX="166"
+        android:translateY="166"
+        android:scaleX="6"
+        android:scaleY="6"
     >
         <path
             android:name="path"

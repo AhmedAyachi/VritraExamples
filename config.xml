@@ -2,7 +2,7 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0"
     id="com.vritraexamples.app" android-packageName="com.vritraexamples.app" version="1.0.0" 
 >
-    <name>VritraExamples</name>
+    <name>Vritra Examples</name>
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"/>
     <description>App description</description>
     <author email="">Author/Organization name</author>
@@ -15,8 +15,13 @@
     <!-- <preference name="android-maxSdkVersion" value=""/> -->
     <preference name="BackgroundColor" value="#382c5a"/>
     <preference name="StatusBarOverlaysWebView" value="false"/>
-    <!-- <icon src=""/> -->
+    <preference name="StatusBarBackgroundColor" value="#e03065"/>
     <platform name="android">
+        <icon 
+            background="@color/mainColor" 
+            foreground="src/Assets/Icon/Icon.xml"
+            density="xxxhdpi" src="src/Assets/Icon/Icon_512.png"
+        />
         <edit-config 
             file="app/src/main/AndroidManifest.xml"
             target="/manifest/application/activity[@android:name='MainActivity']"

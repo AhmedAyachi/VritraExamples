@@ -1,0 +1,54 @@
+.hashrouterview{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:stretch;
+}
+.container{
+    max-width:100%;
+    flex:1;
+}
+.navigator{
+    max-width:100%;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:5em;
+}
+.navigator>img{
+    width:8em;
+    transition:200ms;
+}
+.route{
+    max-width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.route>p{
+    max-width:70%;
+    font-size:5em;
+    line-height:1.5em;
+    text-align:center;
+    text-transform:capitalize;
+}
+.route>p>span{
+    color:var(--mainColor);
+}
+
+
+@media(any-hover){
+    .navigator>img:hover{
+        opacity:0.5;
+        cursor:pointer;
+    }
+}
+
+@media(hover:none){
+    .navigator>img:active{
+        opacity:0.5;
+    }
+}

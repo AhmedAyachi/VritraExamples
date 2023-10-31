@@ -5,7 +5,7 @@ import {ComponentScreen,HomeScreen} from "screens";
 
 
 export default function MainView(props){
-    const {parent}=props;
+    const {parent,store}=props;
     const mainview=NativeView({parent,id:"webview",className:css.mainview});
 
     mainview.innateHTML=`
@@ -13,7 +13,7 @@ export default function MainView(props){
     DrawerNavigator({
         parent:mainview,
         headerClassName:css.header,
-        initialId:"leaderlinetester",
+        initialId:"home",
         routes:statics.routes,
         tintColor:mainColor,
     });

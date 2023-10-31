@@ -9,28 +9,28 @@
     "extract": "vritra-scripts extract"
   },
   "devDependencies": {
+    "cordova-android": "^10.1.2",
     "cordova-browser": "^7.0.0",
     "cordova-ios": "^7.0.1",
-    "cordova-plugin-appminimize": "^1.0.1",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-statusbar": "^3.0.0",
-    "vritra-plugin-webview": "^0.0.1",
-    "vritra-scripts": "^0.0.1"
+    "vritra-plugin-webview": "^0.0.1"
   },
   "dependencies": {
-    "vritra": "^0.0.1",
-    "leaderline": "github:AhmedAyachi/LeaderLine"
+    "leaderline": "github:AhmedAyachi/LeaderLine",
+    "vritra": "^0.0.5",
+    "vritra-scripts": "^0.0.2"
   },
   "cordova": {
     "plugins": {
       "cordova-plugin-statusbar": {},
-      "cordova-plugin-appminimize": {},
       "cordova-plugin-ionic-keyboard": {},
       "vritra-plugin-webview": {}
     },
     "platforms": [
       "browser",
-      "ios"
+      "ios",
+      "android"
     ]
   }
 }
