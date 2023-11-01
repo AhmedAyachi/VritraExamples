@@ -17,7 +17,7 @@
     "vritra-plugin-webview": "^0.0.1"
   },
   "dependencies": {
-    "leaderline": "github:AhmedAyachi/LeaderLine",
+    "linkerline": "^1.0.0",
     "vritra": "^0.0.5",
     "vritra-scripts": "^0.0.2"
   },

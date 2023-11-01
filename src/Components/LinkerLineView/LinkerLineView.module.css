@@ -1,4 +1,4 @@
-.leaderlineview{
+.linkerlineview{
     width:80%;
     height:100em;
     display:flex;
@@ -10,17 +10,17 @@
     box-shadow:0 0 8px rgba(0,0,0,0.15);
     overflow:scroll;
 }
-.leaderlineview::-webkit-scrollbar{
+.linkerlineview::-webkit-scrollbar{
     width:1em;
     height:1em;
 }
-.leaderlineview::-webkit-scrollbar-thumb{
+.linkerlineview::-webkit-scrollbar-thumb{
     background-color:var(--minorColor);
 }
-.leaderlineview::-webkit-scrollbar-track{
+.linkerlineview::-webkit-scrollbar-track{
     background-color:transparent;
 }
-.leaderlineview>button{
+.linkerlineview>button{
     font-size:5em;
     color:var(--backgroundColor);
     padding:0.5em 1em;
@@ -44,7 +44,7 @@
     .draggableview{
         cursor:grab;
     }
-    .leaderlineview>button{
+    .linkerlineview>button{
         cursor:pointer;
     }
 }

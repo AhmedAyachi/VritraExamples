@@ -1,21 +1,21 @@
 import {DraggableView,isTouchDevice} from "vritra";
-import css from "./LeaderLineView.module.css";
-import LeaderLine from "leaderline";
+import css from "./LinkerLineView.module.css";
+import LinkerLine from "linkerline";
 
 
-export default function LeaderLineView(props){
-    const leaderlineview=DraggableView({...props,className:css.leaderlineview}),state={
+export default function LinkerLineView(props){
+    const linkerlineview=DraggableView({...props,className:css.linkerlineview}),state={
         start:null,end:null,
         hidden:false,
     };
 
-    leaderlineview.innateHTML=`
+    linkerlineview.innateHTML=`
         <button ref="togglebtn">Toggle Line</button>
     `;
 
     ["start","end"].forEach(key=>{
         const draggableview=state[key]=DraggableView({
-            parent:leaderlineview,
+            parent:linkerlineview,
             className:css.draggableview,
             onMove:()=>{line.position()},
         });
@@ -24,16 +24,16 @@ export default function LeaderLineView(props){
             event.stopPropagation();
         }
     });
-    const line=new LeaderLine({
-        ...state,parent:leaderlineview,
+    const line=new LinkerLine({
+        ...state,parent:linkerlineview,
         color:minorColor,
         size:Math.min(isTouchDevice()?rem/5:rem,5),
     });
     
-    leaderlineview.togglebtn.onclick=()=>{
+    linkerlineview.togglebtn.onclick=()=>{
         const hidden=state.hidden=!state.hidden;
         hidden?line.hide("fade"):line.show("fade",{});
     }
 
-    return leaderlineview;
+    return linkerlineview;
 }
