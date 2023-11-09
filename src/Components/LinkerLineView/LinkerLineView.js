@@ -32,7 +32,7 @@ export default function LinkerLineView(props){
     
     linkerlineview.togglebtn.onclick=()=>{
         const hidden=state.hidden=!state.hidden;
-        hidden?line.hide("fade"):line.show("fade",{});
+        hidden?line.hide("fade"):line.show("fade");
     }
 
     return linkerlineview;
