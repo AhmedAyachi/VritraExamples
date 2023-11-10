@@ -14,12 +14,12 @@
     "cordova-ios": "^7.0.1",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-statusbar": "^3.0.0",
-    "vritra-plugin-webview": "^0.0.1"
+    "vritra-plugin-webview": "^1.0.0"
   },
   "dependencies": {
     "linkerline": "^1.0.0",
-    "vritra": "^0.0.5",
-    "vritra-scripts": "^0.0.2"
+    "vritra": "^1.0.1",
+    "vritra-scripts": "^1.0.0"
   },
   "cordova": {
     "plugins": {
