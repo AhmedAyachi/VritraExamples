@@ -1,12 +1,10 @@
 import "../index";
 import MainView from "./MainView";
-import {makeStatusBarUnderlaid} from "resources";
 import {store} from "../../Store";
 import WebViews from "../WebViews";
 
 
 function onDeviceReady(){
-    //makeStatusBarUnderlaid(mainColor,1);
     WebView.defineWebViews(WebViews);
     WebView.initiateStore(store,(store)=>{
         MainView({parent:document.body,store});

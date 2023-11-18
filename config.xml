@@ -3,24 +3,27 @@
     id="com.vritraexamples.app" android-packageName="com.vritraexamples.app" version="1.0.0" 
 >
     <name>Vritra Examples</name>
-    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"/>
-    <description>App description</description>
-    <author email="">Author/Organization name</author>
+    <description>source code of some examples of vritra components</description>
+    <author email="aayachi032@gmail.com">Ahmed Ayachi</author>
     <content src="index.html"/>
     <access origin="file://*"/>
     <allow-navigation href="file://*"/>
     <allow-intent href="file://*"/>
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"/>
+
     <preference name="android-minSdkVersion" value="26"/>
     <!-- <preference name="android-targetSdkVersion" value=""/> -->
     <!-- <preference name="android-maxSdkVersion" value=""/> -->
-    <preference name="BackgroundColor" value="#382c5a"/>
+    <preference name="StatusBarStyle" value="lightcontent"/>
     <preference name="StatusBarOverlaysWebView" value="false"/>
-    <preference name="StatusBarBackgroundColor" value="#e03065"/>
+    <preference name="StatusBarBackgroundColor" value="@color/mainColor"/>
+    <preference name="BackgroundColor" value="#382c5a"/>
+
     <platform name="android">
         <icon 
             background="@color/mainColor" 
             foreground="src/Assets/Icon/Icon.xml"
-            density="xxxhdpi" src="src/Assets/Icon/Icon_512.png"
+            src="src/Assets/Icon/Icon_512.png" density="xxxhdpi"
         />
         <edit-config 
             file="app/src/main/AndroidManifest.xml"
@@ -30,11 +33,12 @@
             <activity android:theme="@style/MainActivity"/>
         </edit-config>
         <resource-file src="src/Assets/Xml/MainActivity.xml" target="/app/src/main/res/values/MainActivity.xml"/>
-        <resource-file src="src/Assets/Xml/LaunchScreen_0.xml" target="/app/src/main/res/drawable/launchscreen.xml"/>
+        <resource-file src="src/Assets/Xml/LaunchScreen.xml" target="/app/src/main/res/drawable/launchscreen.xml"/>
     </platform>
+
     <platform name="ios">
         <preference name="UseSwiftLanguageVersion" value="5"/>
-        <!-- <icon src="src/Assets/Icon/Icon_20.png" width="20"/>
+        <icon src="src/Assets/Icon/Icon_20.png" width="20"/>
         <icon src="src/Assets/Icon/Icon_29.png" width="29"/>
         <icon src="src/Assets/Icon/Icon_40.png" width="40"/>
         <icon src="src/Assets/Icon/Icon_48.png" width="48"/>
@@ -56,6 +60,6 @@
         <icon src="src/Assets/Icon/Icon_167.png" width="167"/>
         <icon src="src/Assets/Icon/Icon_172.png" width="172"/>
         <icon src="src/Assets/Icon/Icon_180.png" width="180"/>
-        <icon src="src/Assets/Icon/Icon_196.png" width="196"/> -->
+        <icon src="src/Assets/Icon/Icon_196.png" width="196"/>
     </platform>
 </widget>
