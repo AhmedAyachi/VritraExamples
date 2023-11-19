@@ -32,8 +32,8 @@
         >
             <activity android:theme="@style/MainActivity"/>
         </edit-config>
-        <resource-file src="src/Assets/Xml/MainActivity.xml" target="/app/src/main/res/values/MainActivity.xml"/>
-        <resource-file src="src/Assets/Xml/LaunchScreen.xml" target="/app/src/main/res/drawable/launchscreen.xml"/>
+        <resource-file src="src/Assets/Config/android/MainActivity.xml" target="/app/src/main/res/values/MainActivity.xml"/>
+        <resource-file src="src/Assets/LaunchScreen/LaunchScreen.xml" target="/app/src/main/res/drawable/launchscreen.xml"/>
     </platform>
 
     <platform name="ios">

@@ -6,4 +6,5 @@ platforms
 www
 hooks
 typings
+!src/**
 ToDo.txt
