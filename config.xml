@@ -38,6 +38,8 @@
 
     <platform name="ios">
         <preference name="UseSwiftLanguageVersion" value="5"/>
+        <preference name="SplashScreenDelay" value="1000"/>
+        <preference name="ShowSplashScreenSpinner" value="false"/>
         <icon src="src/Assets/Icon/Icon_20.png" width="20"/>
         <icon src="src/Assets/Icon/Icon_29.png" width="29"/>
         <icon src="src/Assets/Icon/Icon_40.png" width="40"/>
@@ -61,5 +63,6 @@
         <icon src="src/Assets/Icon/Icon_172.png" width="172"/>
         <icon src="src/Assets/Icon/Icon_180.png" width="180"/>
         <icon src="src/Assets/Icon/Icon_196.png" width="196"/>
+        <splash src="src/Assets/LaunchScreen/Default@2x~universal~anyany.png"/>
     </platform>
 </widget>
