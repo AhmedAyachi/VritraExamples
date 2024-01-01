@@ -18,7 +18,7 @@
     "vritra-plugin-webview": "^1.0.0"
   },
   "dependencies": {
-    "linkerline": "^1.0.0",
+    "linkerline": "^1.1.0",
     "vritra": "^1.0.1",
     "vritra-scripts": "^1.0.0"
   },
