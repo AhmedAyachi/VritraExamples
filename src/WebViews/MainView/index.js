@@ -5,6 +5,7 @@ import WebViews from "../WebViews";
 
 
 function onDeviceReady(){
+    StatusBar.backgroundColorByHexString(mainColor);
     WebView.defineWebViews(WebViews);
     WebView.initiateStore(store,(store)=>{
         MainView({parent:document.body,store});

@@ -1,4 +1,4 @@
-import {DraggableView,isTouchDevice} from "vritra";
+import {DraggableView} from "vritra";
 import css from "./LinkerLineView.module.css";
 import LinkerLine from "linkerline";
 
@@ -27,7 +27,6 @@ export default function LinkerLineView(props){
     const line=new LinkerLine({
         ...state,parent:linkerlineview,
         color:minorColor,
-        size:Math.min(isTouchDevice()?rem/5:rem,5),
     });
     
     linkerlineview.togglebtn.onclick=()=>{

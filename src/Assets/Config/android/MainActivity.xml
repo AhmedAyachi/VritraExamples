@@ -3,8 +3,8 @@
     <style name="MainActivity" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowIsTranslucent">false</item>
         <item name="android:windowFullscreen">false</item>
-        <item name="android:statusBarColor">@color/mainColor</item>
+        <item name="android:statusBarColor">@color/backgroundColor</item>
         <item name="android:windowBackground">@drawable/launchscreen</item>
     </style>
-    <color name="mainColor">#e03065</color>
+    <color name="backgroundColor">#382c5a</color>
 </resources>

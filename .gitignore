@@ -7,4 +7,4 @@ www
 hooks
 typings
 !src/**
-ToDo.txt
+.DS_Store
