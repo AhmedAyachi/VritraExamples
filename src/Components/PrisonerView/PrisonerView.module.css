@@ -16,10 +16,27 @@
     border-radius:50%;
     background-color:var(--mainColor);
 }
+.breakbtn{
+    font-size:5em;
+    text-transform:capitalize;
+    color:var(--textColor);
+    position:absolute;
+    right:0;
+    bottom:0;
+    padding:0.5em 1em;
+    background-color:var(--mainColor);
+}
 
 
 @media(any-hover){
     .prisoner:hover{
         cursor:pointer;
+    }
+}
+
+@media(max-width:15cm){
+    .prison{
+        width:75em;
+        height:75em;
     }
 }

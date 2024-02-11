@@ -1,7 +1,8 @@
 import {NativeView,DrawerNavigator} from "vritra";
 import css from "./MainView.module.css";
-import * as components from "components";
 import {ComponentScreen,HomeScreen} from "screens";
+import * as components from "components";
+import FPSMeter from "fps-m";
 
 
 export default function MainView(props){
@@ -13,10 +14,15 @@ export default function MainView(props){
     DrawerNavigator({
         parent:mainview,
         headerClassName:css.header,
+        tintColor:mainColor,
         initialId:"home",
         routes:statics.routes,
-        tintColor:mainColor,
     });
+
+    const fpsmeter=new FPSMeter({ui:true});
+    fpsmeter.start();
+    const headerEl=mainview.querySelector(`.${css.header}`);
+    headerEl.appendChild(fpsmeter.element).classList.add(css.fpsmeter);
 
     return mainview;
 }
