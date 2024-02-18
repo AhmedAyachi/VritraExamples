@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "fps-m": "^1.1.3",
-    "linkerline": "^1.1.1",
+    "linkerline": "^1.2.0",
     "vritra": "^1.2.0"
   },
   "cordova": {

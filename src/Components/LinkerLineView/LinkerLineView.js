@@ -24,14 +24,11 @@ export default function LinkerLineView(props){
             event.stopPropagation();
         }
     });
-    const line=new LinkerLine({
-        ...state,parent:linkerlineview,
-        color:minorColor,
-    });
-    
+    const line=new LinkerLine({...state,color:minorColor});
+        
     linkerlineview.togglebtn.onclick=()=>{
         const hidden=state.hidden=!state.hidden;
-        hidden?line.hide("fade"):line.show("fade");
+        hidden?line.hide("draw"):line.show("draw");
     }
 
     return linkerlineview;
