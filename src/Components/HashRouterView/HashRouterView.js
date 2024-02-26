@@ -37,6 +37,8 @@ export default function HashRouterView(props){
             {
                 hash:"#:name",
                 /**
+                 * ( In this comment, by hash, I don't mean the hash passed to the route object
+                 *   but the string that shows after the route name in the UI)
                  * the other hashes are always changing because params-change triggers a rerender
                  * even when memorize true is applied.
                  * If you remove the home route config object or set memorize to false, 
@@ -48,7 +50,7 @@ export default function HashRouterView(props){
             ...config,
             /**
              * Typically, you would create a component for every route,
-             * but here we passing the same component for the sake of the example.
+             * but here we're passing the same component for the sake of the example.
              */
             component:(props)=>{
                 const {parent,params}=props;
@@ -56,6 +58,9 @@ export default function HashRouterView(props){
                 view.innateHTML=`
                     <p>showing the <span>${useId(name||"Home")}</span> screen</p>
                 `;
+                /**
+                 * onShow is a method recognized by the router and executed every time the route is targeted
+                 */
                 view.onShow=()=>{
                     const action=statics.actions.find(action=>name?action.id===name:!action.id);
                     const {active}=state;
@@ -84,20 +89,9 @@ export default function HashRouterView(props){
 
 const statics={
     actions:[
-        {
-            icon:home0,
-        },
-        {
-            id:"market",
-            icon:market0,
-        },
-        {
-            id:"wallet",
-            icon:wallet0,
-        },
-        {
-            id:"settings",
-            icon:cog0,
-        },
+        {icon:home0},
+        {id:"market",icon:market0},
+        {id:"wallet",icon:wallet0},
+        {id:"settings",icon:cog0},
     ]
 }

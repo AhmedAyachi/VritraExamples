@@ -1,0 +1,48 @@
+.cmtview{
+    max-width:100%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    padding:3em;
+    column-gap:3em;
+}
+.content{
+    flex:1;
+}
+.postername{
+    font-size:3em;
+    color:#606060;
+}
+.body{
+    max-width:100%;
+    font-size:3.5em;
+    line-height:1.5em;
+    white-space:wrap;
+    color:black;
+    margin-top:0.5em;
+}
+.body::after{
+    content:".";
+}
+.actions{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    column-gap:10em;
+    margin-top:3em;
+}
+.action{
+    font-size:1em;
+    width:fit-content;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    column-gap:1em;
+    background:none;
+}
+.action>img{
+    width:5em;
+}
+.action>label{
+    font-size:3.5em;
+}

@@ -1,0 +1,37 @@
+.headerview{
+    max-width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:3em 4em;
+    padding-top:5em;
+    border-bottom:var(--border);
+    p{
+        flex:1;
+        display:flex;
+        justify-content:flex-start;
+        align-items:center;
+        column-gap:3em;
+    }
+}
+.actions{
+    width:fit-content;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    column-gap:5em;
+}
+.actions>img{
+    width:7em;
+}
+.title{
+    font-family:var(--mainFont);
+    font-weight:700;
+    font-size:6em;
+    text-transform:capitalize;
+    color:black;
+}
+.commentcount{
+    font-size:3.75em;
+    color:rgba(0,0,0,0.65);
+}

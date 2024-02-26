@@ -1,0 +1,13 @@
+.profileimage{
+    width:5.5em;
+    height:5.5em;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    overflow:hidden;
+}
+.letter{
+    font-size:3em;
+    color:var(--backgroundColor);
+}

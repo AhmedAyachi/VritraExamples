@@ -10,6 +10,20 @@
 .header img{
     filter:invert(1);
 }
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    &>button{
+        font-size:5em;
+        text-transform:capitalize;
+        color:var(--textColor);
+        padding:1em;
+        border-radius:0.35em;
+        background-color:var(--mainColor);
+    }
+}
 .fpsmeter{
     position:absolute !important;
     width:fit-content !important;

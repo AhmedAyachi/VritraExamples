@@ -3,7 +3,7 @@
     id="com.vritraexamples.app" android-packageName="com.vritraexamples.app" version="0.0.1" 
 >
     <name>VritraExamples</name>
-    <description>source code of some examples of vritra components</description>
+    <description>source code of vritra components examples</description>
     <author email="aayachi032@gmail.com">Ahmed Ayachi</author>
     <content src="index.html"/>
     <access origin="file://*"/>

@@ -1,4 +1,4 @@
-import {NativeView,DrawerNavigator} from "vritra";
+import {NativeView,DrawerNavigator,Fragment} from "vritra";
 import css from "./MainView.module.css";
 import {ComponentScreen,HomeScreen} from "screens";
 import * as components from "components";
@@ -14,8 +14,9 @@ export default function MainView(props){
     DrawerNavigator({
         parent:mainview,
         headerClassName:css.header,
+        containerClassName:css.container,
         tintColor:mainColor,
-        initialId:"home",
+        initialId:"YTCmtView",
         routes:statics.routes,
     });
 
@@ -30,7 +31,10 @@ export default function MainView(props){
 const statics={
     routes:[
         {id:"home",component:HomeScreen},
-        ...Object.keys(components).map(key=>({
+        ...[
+            "HashRouterView","LinkerLineView","PrisonerView",
+            "TicTacToeGame","ZoomExample","InterpolatedView",
+        ].map(key=>({
             id:key.toLowerCase(),
             title:key,
             component:({parent})=>ComponentScreen({
@@ -38,5 +42,21 @@ const statics={
                 component:components[key],
             }),
         })),
-    ],
+        (cordova.platformId!=="browser")&&{
+            id:"YTCmtView",
+            component:({parent})=>{
+                const fragment=Fragment({parent});
+                fragment.innateHTML=`
+                    <button ref="showbtn">show comments</button>
+                `;
+                fragment.showbtn.onclick=()=>{
+                    WebView.show({
+                        id:"bottomsheet",
+                        backgroundColor:"white",
+                    });
+                }
+                return fragment;
+            },
+        },
+    ].filter(Boolean),
 }
