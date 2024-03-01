@@ -16,7 +16,7 @@ export default function MainView(props){
         headerClassName:css.header,
         containerClassName:css.container,
         tintColor:mainColor,
-        initialId:"YTCmtView",
+        initialId:"home",
         routes:statics.routes,
     });
 
