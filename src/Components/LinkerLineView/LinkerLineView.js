@@ -24,7 +24,12 @@ export default function LinkerLineView(props){
             event.stopPropagation();
         }
     });
-    const line=new LinkerLine({...state,color:minorColor});
+    const line=new LinkerLine({
+        ...state,
+        parent:linkerlineview,
+        path:"grid",
+        color:minorColor,
+    });
         
     linkerlineview.togglebtn.onclick=()=>{
         const hidden=state.hidden=!state.hidden;
